@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+# vim: set ft=ruby:
+
+require "doala"
+cmd = ARGV.first
+
+def available
+  Doala.methods(false)
+end
+
+def usage
+  $stderr.puts <<TXT
+Available commands are: #{available.join(", ")}
+TXT
+  exit 1
+end
+
+usage unless cmd
+
+unless available.include?(cmd.to_sym)
+  $stderr.puts "Not found '#{cmd}'" 
+  usage
+end
+
+puts Doala.send(cmd)
