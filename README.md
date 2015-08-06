@@ -32,6 +32,21 @@ $ pry
 => "つば九郎"
 ```
 
+or 
+
+```
+$ bundle exec doala
+Available commands are: face, business_friend
+$ bundle exec doala face
+(⌒(´・△・`)⌒)
+$ for a in $(seq 1 5); do bundle exec doala face; done
+(⌒(´・△・`)⌒)
+(⌒(´・△・`)⌒)
+(⌒(´・△・`)⌒)
+(⌒(´・△・`)⌒)
+(⌒(´・△・`)⌒)
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake false` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
