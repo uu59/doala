@@ -22,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+$ pry
+[1] pry(main)> require 'doala'
+=> true
+[2] pry(main)> Doala.face
+=> "(⌒(´・△・`)⌒)"
+[3] pry(main)> Doala.business_friend
+=> "つば九郎"
+```
 
 ## Development
 
