@@ -22,4 +22,9 @@ unless available.include?(cmd.to_sym)
   usage
 end
 
-puts Doala.send(cmd)
+if cmd == "move" # ad hoc is always evil...
+  Doala.move(40) { |s| print s }
+  puts
+else
+  puts Doala.send(cmd)
+end
