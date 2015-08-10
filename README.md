@@ -45,6 +45,8 @@ $ for a in $(seq 1 5); do bundle exec doala face; done
 (⌒(´・△・`)⌒)
 (⌒(´・△・`)⌒)
 (⌒(´・△・`)⌒)
+$ bundle exec doala move
+    (⌒(´・△・`)⌒) # Doala moves to the right side of your screen...
 ```
 
 ## Development
