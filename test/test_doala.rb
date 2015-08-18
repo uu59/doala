@@ -21,4 +21,12 @@ class DoalaTest < Minitest::Test
       counter += 1
     end
   end
+
+  def test_height
+    assert_equal 'アジアの頂点 cm', Doala.height
+  end
+
+  def test_weight
+    assert_equal '圧倒的な存在感 kg', Doala.weight
+  end
 end
