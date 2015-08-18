@@ -17,6 +17,14 @@ module Doala
     end
   end
 
+  def height
+    'アジアの頂点 cm'
+  end
+
+  def weight
+    '圧倒的な存在感 kg'
+  end
+
   # to be private
   def bakuten
     tr_face = -> (s) { s.tr("´`△⌒", ",,▽‿"); }
@@ -29,6 +37,6 @@ module Doala
     end
   end
 
-  module_function :face, :business_friend, :move, :bakuten
+  module_function :face, :business_friend, :move, :bakuten, :height, :weight
   private_class_method :bakuten
 end
