@@ -30,6 +30,10 @@ $ pry
 => "(⌒(´・△・`)⌒)"
 [3] pry(main)> Doala.business_friend
 => "つば九郎"
+[4] pry(main)> Doala.height
+=> "アジアの頂点 cm"
+[5] pry(main)> Doala.weight
+=> "圧倒的な存在感 kg"
 ```
 
 or 
