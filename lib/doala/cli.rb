@@ -48,7 +48,12 @@ TXT
     private
 
     def terminal_width
-      [terminal_width_with_stty, terminal_width_with_tput, FALLBACK_WIDTH].max
+      proper_width = [terminal_width_with_stty, terminal_width_with_tput].max
+      if proper_width.zero?
+        FALLBACK_WIDTH
+      else
+        proper_width
+      end
     end
 
     def terminal_width_with_tput
