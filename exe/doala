@@ -1,30 +1,6 @@
 #!/usr/bin/env ruby
 # vim: set ft=ruby:
 
-require "doala"
-cmd = ARGV.first
+require "doala/cli"
 
-def available
-  Doala.methods(false)
-end
-
-def usage
-  $stderr.puts <<TXT
-Available commands are: #{available.join(", ")}
-TXT
-  exit 1
-end
-
-usage unless cmd
-
-unless available.include?(cmd.to_sym)
-  $stderr.puts "Not found '#{cmd}'" 
-  usage
-end
-
-if cmd == "move" # ad hoc is always evil...
-  Doala.move(40) { |s| print s }
-  puts
-else
-  puts Doala.send(cmd)
-end
+Doala::CLI.new(ARGV).run
