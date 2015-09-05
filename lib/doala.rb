@@ -25,6 +25,10 @@ module Doala
     '圧倒的な存在感 kg'
   end
 
+  def favorite_comedian
+    '高田純次'
+  end
+
   # to be private
   def bakuten
     tr_face = -> (s) { s.tr("´`△⌒", ",,▽‿"); }
@@ -37,6 +41,6 @@ module Doala
     end
   end
 
-  module_function :face, :business_friend, :move, :bakuten, :height, :weight
+  module_function :face, :business_friend, :move, :bakuten, :height, :weight, :favorite_comedian
   private_class_method :bakuten
 end
