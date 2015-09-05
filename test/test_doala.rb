@@ -29,4 +29,8 @@ class DoalaTest < Minitest::Test
   def test_weight
     assert_equal '圧倒的な存在感 kg', Doala.weight
   end
+
+  def test_favorite_comedian
+    assert_equal '高田純次', Doala.favorite_comedian
+  end
 end
