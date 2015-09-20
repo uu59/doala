@@ -1,3 +1,6 @@
+[![build status](https://circleci.com/gh/to0526/doala/tree/master.png?style=shield)](https://circleci.com/gh/to0526/doala)
+[![Gem Version](https://badge.fury.io/rb/doala.svg)](http://badge.fury.io/rb/doala)
+
 # Doala
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/doala`. To experiment with that code, run `bin/console` for an interactive prompt.
